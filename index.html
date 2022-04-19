@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img src="./Assets/game-controller-svgrepo-com.svg" alt="" class="logo">
+                <ul class="nav__links">
+                    <li>
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__link no-cursor">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#features" class="nav__link nav__link--primary">Games</a>
+                    </li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
+                        <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">games</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>The Most Popular Games on a Single Platform</h1>
+                    <h2>Find your dream game with&nbsp;<span class="text__purple">GameStore</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse Games</button>
+                    </a>
+                </div>
+                <figure class="header__img--wrapper">
+                    <img src="./Assets/undraw_gaming2.svg" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="highlights">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Why Choose <span class="text__purple">GameStore</span>
+                    </h2>
+                    <div class="highlight__wrapper">
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Easy and Quick
+                            </h3>
+                            <p class="highlight__para">
+                                Easily purchase your Game and get it delivered to your home.
+                            </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                10,000+ Games
+                            </h3>
+                            <p class="highlight__para">
+                                GameStore has the most popular games for Playstation, Xbox and PC. 
+                            </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Affordable Prices
+                            </h3>
+                            <p class="highlight__para">
+                                Get your hands on popular games for as little as €20.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="text__purple">Games</span>
+                    </h2>
+                    <div class="games">
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/gta v.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Gta V
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€36,99</span>€19,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/cold war.webp" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Call of Duty: Cold War
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€64,99</span>€46,95
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/battlefield v.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Battlefield V
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€36,99</span>€24,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/rocket league.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Rocket League
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€39,99</span>€24,99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Browse The Latest <span class="text__purple">Games</span>
+                    </h2>
+                    <div class="games">
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/fifa22 new.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                FIFA 22
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€69,99</span>€43,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/battefield 2042 ps4.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Battlefield 2042
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€64,99</span>€54,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/cod vanguard.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Call of Duty: Vanguard
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€69,99</span>€59,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/far cry 6.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Far Cry 6
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€69,99</span>€42,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/just dance 4.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Just Dance 2022
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€49,99</span>€36,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/nba 2k22.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                NBA 2k22
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€44,99</span>€36,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/assassins creed valhalla.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Assassin's Creed Valhalla
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€69,99</span>€56,99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img--wrapper">
+                                <img class="game__img" src="./Assets/f1 2021.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                F1 2021
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">€69,99</span>€42,99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore">
+            <div class="container">
+                <div class="row">
+                    <div class="explore__content">
+                        <h1 class="explore__title">Explore more <span class="text__purple">Games</span></h1>
+                        <a href="#features">
+                            <button class="btn">Browse Games</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row row-column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="./Assets/Library.svg" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="#" class="footer__link" >Home</a>
+                    <a href="" class="footer__link no-cursor" >About</a>
+                    <a href="#features" class="footer__link" >Games</a>
+                    <a href="" class="footer__link no-cursor" >Contact</a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2022 Library</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
